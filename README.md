@@ -1,60 +1,60 @@
-# PyCity Schools Analysis
+# Pymaceuticals_challenge
 
-This Jupyter Notebook contains an analysis of city's school district, including district-level and school-level summaries, performance comparisons, and additional insights.
+# Mouse Study Analysis
 
 ## Overview
 
-The analysis covers various aspects of city's school district, including district and school summaries, performance metrics, and detailed breakdowns by grade, spending, size, and school type.
+This project analyzes data from a study involving mice and different drug regimens. The dataset includes information on mouse characteristics, drug regimens, and tumor volume observations. The analysis aims to derive insights into the effectiveness of various drug regimens in reducing tumor volume and understand the relationship between different variables.
 
-## Files
+## Project Structure
 
-- **PyCitySchools.ipynb**: The Jupyter Notebook containing the Python code and analysis.
+The project is organized into several sections:
 
-## Data Sources
+1. **Data Cleaning and Preparation:**
+   - Merging mouse metadata and study results.
+   - Identifying and handling duplicate data.
+   - Preparing the dataset for analysis.
 
-- **Resources/schools_complete.csv**: CSV file containing information about schools.
-- **Resources/students_complete.csv**: CSV file containing information about students.
+2. **Summary Statistics:**
+   - Calculating mean, median, variance, standard deviation, and SEM of tumor volume for each drug regimen.
+   - Presenting the summary statistics in a structured table.
 
-## Dependencies
+3. **Visualization:**
+   
+   ![bar_chart](img/bar_chart.png)
 
-- Pandas
-- Pathlib
+   - Generating bar plots to visualize the distribution of mouse timepoints across different drug regimens.
 
-## Usage
+   ![pie_chart](img/pie_chart.png)
 
-1. Open the Jupyter Notebook `PyCitySchools.ipynb` in a Jupyter environment.
-2. Ensure that the necessary dependencies are installed.
-3. Execute the code cells sequentially to perform the analysis.
-4. Review the district and school summaries, performance comparisons, and additional insights.
+   - Creating pie charts to illustrate the sex distribution among mice.
 
-## Conclusions
+4. **Quartiles, Outliers, and Boxplots:**
 
-![conclusion_1](img/conclusion_1.png)
+   ![boxplot](img/boxplot.png)
 
-<img src="img/conclusion_1.png" alt="conclusion_1" width="75%" height="75%">
+   - Identifying potential outliers and analyzing the distribution of tumor volume for selected drug regimens using boxplots.
 
-1. Schools with **smaller** spendings per student show better performance than schools with **higher** spendings per student.
+5. **Correlation and Regression:**
 
-![conclusion_2](img/conclusion_2.png)
+   ![regression](img/regression.png)
 
-2. Schools of **small** and **medium** size show better performance than **large** schools.
+   - Investigating the correlation between mouse weight and average tumor volume.
+   - Performing linear regression analysis to model the relationship between weight and tumor volume.
 
-![conclusion_3](img/conclusion_3.png)
+6. **Conclusion:**
+   - Summarizing key findings and insights obtained from the analysis.
 
-3. **Chater** schools show far better performance than **district** schools.
+## Instructions
 
-Also I conducted more complex analysis in my own bonus part and here is a bonus conclusion:
+To run the analysis, follow these steps:
 
-![bonus_conclusion](img/bonus_conclusion.png)
+1. Clone the repository:
 
-**School type** has the most significant influence on performance. Moreover, due to this substantial factor, previous conclusions cannot be considered entirely correct. Additionally, schools are not evenly distributed among groups; for example, all **district** schools are large and have more than $585 per capita spending. Therefore, **small** and **medium** **charter** schools, with higher average performance, greatly influence on conclusions for *Scores by School Spending* and *Scores by School Size* sections.
-
-All those conclusions can be found inline in the notebook.
-
-# Analysis Summary
-1. **Average Reading Score** and **% Passing Reading** are higher than corresponded performance metrics for math
-2. **School type** has the most significant influence on performance
-3. For more correct analytics and conclusion we need to consider a **few factors together** rather than concentrate on those factors standalone
-4. **Number of schools** in each group also influences on conclusions, therefore, it would be better to add this metric to all tables with grouped results
+   ```bash
+   git clone https://github.com/NataliiaShevchenko620/Pymaceuticals_challenge.git
+   cd Pymaceuticals_challenge
+   ```
+2. Run pymaceuticals_solved.ipynb Jupyter notebook
 
 
